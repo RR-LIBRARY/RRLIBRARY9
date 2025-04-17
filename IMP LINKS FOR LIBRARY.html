@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Links - RR Digital Library</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7fa; /* Light cyan background */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top */
+            min-height: 100vh;
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 800px; /* Max width for the table */
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensures inner elements respect border-radius */
+            border: 1px solid #b2ebf2; /* Light border */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Removes gaps between cells */
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            vertical-align: middle; /* Align content vertically */
+            border-bottom: 1px solid #e0f7fa; /* Light separator lines */
+            font-size: 1rem; /* Base font size */
+        }
+
+        /* Remove bottom border for the last row */
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        thead th {
+            background-color: #4dd0e1; /* Header background color */
+            color: #ffffff; /* Header text color */
+            font-weight: 700; /* Bold header text */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: sticky; /* Make header sticky if table scrolls vertically */
+            top: 0;
+            z-index: 1;
+        }
+
+        /* Style specific columns */
+        th:first-child, td:first-child { /* SNO. column */
+            text-align: center;
+            font-weight: 500;
+            width: 5%; /* Narrow column for SNO */
+        }
+
+        th:nth-child(2), td:nth-child(2) { /* PLATFORM NAME column */
+             font-weight: 500;
+             color: #00796b; /* Teal color for platform */
+             width: 20%;
+        }
+
+         th:nth-child(3), td:nth-child(3) { /* NAME column */
+             width: 45%;
+             color: #37474f; /* Dark grey for text */
+             word-break: break-word; /* Prevent long names from breaking layout */
+        }
+
+        th:last-child, td:last-child { /* LINKs column */
+            text-align: center;
+            width: 20%;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f4fcfe; /* Slightly off-white for even rows */
+        }
+
+        tbody tr:hover {
+            background-color: #b2ebf2; /* Highlight row on hover */
+            cursor: default; /* Default cursor */
+        }
+
+        td a {
+            display: inline-block;
+            background-color: #0097a7; /* Button background color */
+            color: #ffffff; /* Button text color */
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        td a:hover {
+            background-color: #00796b; /* Darker button color on hover */
+            transform: translateY(-1px); /* Slight lift effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            th, td {
+                padding: 10px 12px;
+                font-size: 0.9rem; /* Smaller font on small screens */
+            }
+            td a {
+                padding: 6px 10px;
+                font-size: 0.85rem;
+            }
+            /* Force table to not be like tables anymore */
+            /* Could implement card-like view here if needed, but sticking to table for now */
+            .table-container {
+                 overflow-x: auto; /* Allow horizontal scroll on small screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>SNO.</th>
+                    <th>PLATFORM NAME</th>
+                    <th>NAME</th>
+                    <th>LINKs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Telegram</td>
+                    <td>MORE THAN 260k+ PLUS</td>
+                    <td><a href="https://t.me/ALL_15SEC_QUIZ" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>WhatsApp</td>
+                    <td>MORE THAN 10k+ PLUS SUBSCRIBER ..</td>
+                    <td><a href="https://whatsapp.com/channel/0029Va5pYsZIiRomfKXQan3Q" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Website/Booking</td>
+                    <td>✨BOOK YOUR SEAT NOW 🏆</td>
+                    <td><a href="http://rr-library.github.io/Rrdigitallibrary-" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>YouTube</td>
+                    <td>YT - RR DIGITAL LIBRARY</td>
+                    <td><a href="https://m.youtube.com/@rr_digital_library" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Google Maps</td>
+                    <td>LOCATION ON MAP</td>
+                    <td><a href="http://maps.app.goo.gl/teD9Bcq9LQ64RdRV6" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Email</td>
+                    <td>ANY QUERY WRITE MAIL</td>
+                    <td><a href="mailto:rr.digital.library@gmail.com">Send</a></td>
+                </tr>
+                <!-- Added Rows Start Here -->
+                <tr>
+                    <td>7</td>
+                    <td>RRLIBRARY.WEB</td>
+                    <td>RR DIGITAL LIBRARY Main Site</td>
+                    <td><a href="https://rr-library.github.io/RR-DIGITAL-LIBRARY.COM/" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <tr>
+                    <td>8</td>
+                    <td>RRLIBRARY.WEB</td>
+                    <td>RR DIGITAL Site</td>
+                    <td><a href="https://rr-library.github.io/RRDIGITAL/" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <tr>
+                    <td>9</td>
+                    <td>RRLIBRARY.WEB</td>
+                    <td>RR LIBRARY Site</td>
+                    <td><a href="https://rr-library.github.io/RRLIBRARY/" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <tr>
+                    <td>10</td>
+                    <td>RRLIBRARY.WEB</td>
+                    <td>RR Digital Library Site Alt 1</td>
+                    <td><a href="https://rr-library.github.io/Rrdigitallibrary--/" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <tr>
+                    <td>11</td>
+                    <td>RRLIBRARY.WEB</td>
+                    <td>RR Digital Library Site Alt 2</td>
+                    <td><a href="https://rr-library.github.io/Rrdigitallibrary-./" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <tr>
+                    <td>12</td>
+                    <td>Linktree</td> <!-- Adjusted Platform Name -->
+                    <td>RR LIBRARY Linktree (Old)</td> <!-- Adjusted Name -->
+                    <td><a href="https://linktr.ee/RRLIBRAR" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <tr>
+                    <td>13</td>
+                    <td>Linktree</td> <!-- Adjusted Platform Name -->
+                    <td>RR LIBRARY Linktree (Main)</td> <!-- Adjusted Name -->
+                    <td><a href="https://linktr.ee/RRLIBRARY" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                </tr>
+                 <!-- Added Rows End Here -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
